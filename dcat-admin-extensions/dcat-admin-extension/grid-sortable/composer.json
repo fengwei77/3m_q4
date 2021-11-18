@@ -1,0 +1,36 @@
+{
+    "name": "dcat-admin-extension/grid-sortable",
+    "description": "Drag and drop sorting of grid rows for Dcat-Admin 2.0",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension", "grid-sortable"],
+    "homepage": "https://github.com/dcat-admin-extension/grid-sortable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jqh",
+            "email": "841324345@qq.com"
+        },
+        {
+            "name": "Paweł Bukowski",
+            "email": "bukowski@crazyit.pl"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0",
+        "spatie/eloquent-sortable": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcat\\Admin\\Extension\\GridSortable\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Dcat\\Admin\\Extension\\GridSortable\\GridSortableServiceProvider",
+        "laravel": {
+            "providers": [
+                "Dcat\\Admin\\Extension\\GridSortable\\GridSortableServiceProvider"
+            ]
+        }
+    }
+}
